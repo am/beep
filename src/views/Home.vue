@@ -34,6 +34,12 @@
           </div>
         </div>
       </div>
+      <div class="select">
+        <ion-select value="foo" ok-text="Ok" cancel-text="Cancel">
+          <ion-select-option value="foo">Foo</ion-select-option>
+          <ion-select-option value="bar">Bar</ion-select-option>
+        </ion-select>
+      </div>
       <h2 @click="goToHelp"><span>How does it work?</span></h2>
     </ion-content>
   </ion-page>
@@ -115,6 +121,10 @@ h1 {
   clear: both;
 }
 
+.select {
+  margin-top: 7vh;
+}
+
 .btn-holder {
   position: relative;
   float: left;
@@ -183,7 +193,7 @@ h1 {
 
 h2 {
   height: 10vh;
-  margin-top: 23vh;
+  margin-top: 13vh;
   font-size: 18px;
   font-weight: 300;
   letter-spacing: -0.48px;
